@@ -58,3 +58,20 @@ SELECT * from students
 SELECT * from students;
 
 SELECT length(first_name) from students;
+
+-- @Scalar functions
+--   UPPER() Converts a string to uppercase.
+--   LOWER() Converts a string to lowercase.
+--   CONCAT() Concatenates two or more strings.
+--   LENGTH() Returns the number of characters in a string.
+
+-- @Aggregate functions
+--   AVG() Calculate the average of a set of values.
+--   MAX() Returns the max value in a set.
+--   MIN() Returns the minimum value in a set.
+--   SUM Calculates the sum of values in a set.
+--   COUNT() Counts the number of rows in a set.
+
+SELECT count(*) from students;
+
+SELECT max(length(first_name)) from students;
