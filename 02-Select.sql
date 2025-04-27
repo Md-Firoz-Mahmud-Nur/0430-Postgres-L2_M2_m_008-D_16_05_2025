@@ -87,3 +87,22 @@ SELECT * from students
 SELECT * from students
 
 select COALESCE(email, 'Email not provided') as "Email", blood_group, first_name from students;
+
+
+-- SELECT * FROM students WHERE country = 'USA' or country = 'Canada' or country = 'UK' ;
+SELECT * FROM students
+  WHERE country IN('USA', 'UK', 'Canada') ;
+SELECT * FROM students
+  WHERE country NOT IN('USA', 'UK', 'Canada') ;
+
+SELECT * from students
+  WHERE dob BETWEEN '2000-01-01' and '2005-01-01' ORDER BY dob;
+
+SELECT * from students
+  WHERE first_name LIKE '%am';
+
+SELECT * from students
+  WHERE first_name LIKE '___a';
+
+SELECT * from students
+  WHERE first_name ILIKE 'A%';
