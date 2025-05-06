@@ -106,3 +106,17 @@ SELECT * from students
 
 SELECT * from students
   WHERE first_name ILIKE 'A%';
+
+SELECT * FROM students
+  WHERE country IN('USA', 'UK', 'Canada') LIMIT 5;
+
+SELECT * from students LIMIT 5 OFFSET 5 * 0;
+SELECT * from students LIMIT 5 OFFSET 5 * 1;
+SELECT * from students LIMIT 5 OFFSET 5 * 2;
+SELECT * from students LIMIT 5 OFFSET 5 * 3;
+
+
+SELECT * FROM students WHERE country = 'USA' ;
+
+DELETE FROM students
+  WHERE grade = 'C' AND country = 'USA';
