@@ -120,3 +120,9 @@ SELECT * FROM students WHERE country = 'USA' ;
 
 DELETE FROM students
   WHERE grade = 'C' AND country = 'USA';
+
+SELECT * FROM students;
+
+UPDATE students
+  set email = 'default@mail.com', age = 30, course = 'not found'
+  WHERE student_id = 1;
